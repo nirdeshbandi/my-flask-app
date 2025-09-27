@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        PATH = "/usr/local/bin:${env.PATH}"  // Prepend Docker path
-    }
-
     stages {
         stage('Checkout') {
             steps {
